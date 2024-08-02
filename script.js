@@ -26,6 +26,8 @@ const scrollAnimation = () => {
   });
 };
 
+scrollAnimation();
+
 const scrollAnimationforMob = () => {
   let touchStartY = 0;
   let touchEndY = 0;
@@ -80,6 +82,4 @@ window.addEventListener("click", () => {
 
 if (window.innerWidth < 500) {
   scrollAnimationforMob();
-} else {
-  scrollAnimation();
 }
